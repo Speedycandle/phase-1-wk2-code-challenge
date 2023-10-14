@@ -95,6 +95,12 @@ async function addAnimal(event) {
     nameInput.value = "";
     imageInput.value = "";
 
+    fetchAnimals();
+  } catch (error) {
+    console.log("Error adding animal:", error);
+  }
+}
+
   
   
   
