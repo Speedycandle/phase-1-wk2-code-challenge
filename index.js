@@ -92,6 +92,9 @@ async function addAnimal(event) {
       body: JSON.stringify(newAnimal),
     });
 
+    nameInput.value = "";
+    imageInput.value = "";
+
   
   
   
