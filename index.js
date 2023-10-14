@@ -104,6 +104,8 @@ async function addAnimal(event) {
 resetButton.addEventListener("click", resetVotes);
 addAnimalForm.addEventListener("submit", addAnimal);
 
+fetchAnimals();
+
 
   
   
