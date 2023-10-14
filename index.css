@@ -8,3 +8,81 @@ body {
   h1 {
     text-align: center;
   }
+
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #57667e;
+    gap: 20px;
+  }
+
+  #animals,
+#animal-details,
+#controls,
+#add-animal {
+  flex: 1 1 300px;
+}
+
+#animal-details h2,
+#controls h2,
+#add-animal h2 {
+  margin-top: 0;
+}
+
+#animals-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#animals-list li {
+  cursor: pointer;
+}
+
+#animals-list li:hover {
+  font-weight: bold;
+}
+
+#animal-details {
+  text-align: center;
+}
+
+#animal-details img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#add-animal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#add-animal-form label {
+  font-weight: bold;
+}
+
+#add-animal-form input[type="text"] {
+  padding: 5px;
+}
+
+#add-animal-form button {
+  background-color: #008b8b;
+  color: #413636;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-animal-form button:hover {
+  background-color: #225a2c;
+}
