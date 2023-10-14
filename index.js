@@ -61,6 +61,15 @@ async function fetchAnimals() {
         },
         body: JSON.stringify(data),
       });
+
+      const voteCountElements = document.getElementsByClassName("vote-count");
+    Array.from(voteCountElements).forEach((element) => {
+      element.textContent = "0";
+    });
+  } catch (error) {
+    console.log("Error resetting votes:", error);
+  }
+}
   
   
   
