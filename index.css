@@ -14,4 +14,17 @@ async function fetchAnimals() {
       console.log("Error fetching animals:", error);
     }
   }
+
+  function renderAnimals(data) {
+    animalList.innerHTML = "";
+    data.forEach((animal) => {
+      const li = document.createElement("li");
+      li.textContent = animal.name;
+      li.addEventListener("click", () => {
+        showAnimalDetails(animal);
+      });
+      animalList.appendChild(li);
+    });
+  }
+  
   
